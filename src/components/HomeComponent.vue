@@ -33,5 +33,58 @@
 </script>
 
 <style lang="scss" scoped>
+@import '@/scss/variables.scss';
 
+.home {
+    background: linear-gradient(180deg,
+                $--first-color 0%,
+                $--first-color-alt 100%);
+}
+
+.home__container {
+    padding-top: 2rem;
+    row-gap: 2rem;
+}
+
+.home__data {
+    text-align: center;
+}
+
+.home__subtitle {
+    font-size: $--normal-font-size;
+    color: $--second-color;
+    font-weight: $--font-medium;
+    margin-bottom: .75rem;
+}
+
+.home__title, .home__description {
+    color: $--white-color;
+}
+
+.home__title {
+    text-align: initial;
+    font-size: $--biggest-font-size;
+    font-family: $--second-font;
+    font-weight: $--font-regular;
+    line-height: 120%;
+    margin: 0 auto 2rem;
+    position: relative;
+    width: max-content;
+}
+
+.home__title img {
+    width: 80px;
+    position: absolute;
+    right: -1rem;
+    bottom: -1.25rem;
+}
+
+.home__description {
+    margin-bottom: 2rem;
+}
+
+.home__img {
+    width: 320px;
+    justify-self: center;
+}
 </style>
