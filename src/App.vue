@@ -20,6 +20,8 @@
   }
 }
 
+/************ BASE *************/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -50,6 +52,34 @@ img {
   height: auto;
 }
 
+/************ REUSABLE CSS CLASSES *************/
 
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 4.5rem 3.5rem;
+}
+
+.section__title {
+  color: $--title-color;
+  font-size: $--biggest-font-size;
+  font-family: $--second-font;
+  font-weight: $--font-regular;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.main {
+  overflow: hidden;
+}
 
 </style>
