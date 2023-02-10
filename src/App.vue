@@ -19,4 +19,37 @@
     $--smaller-font-size: .813rem;
   }
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $--body-font;
+  font-size: $--normal-font-size;
+  background-color: $--white-color;
+  color: $--text-color;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 </style>
