@@ -5,7 +5,7 @@
     <nav class="nav container">
       <a href="#" class="nav__logo">
         <img src="@/img/logo.png" alt="" />
-        Cooffezin
+        Coffeezin
       </a>
 
       <div class="nav__menu">
