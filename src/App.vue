@@ -5,5 +5,18 @@
 </template>
 
 <style lang="scss">
+@import '@/scss/variables.scss';
 
+@media screen and (min-width: 1024px) {
+  :root {
+    $--biggest-font-size: 4.5rem;
+    $--big-font-size: 3rem;
+    $--h1-font-size:2.25rem;
+    $--h2-font-size: 1.5rem;
+    $--h3-font-size: 1.25rem;
+    $--normal-font-size: 1rem;
+    $--small-font-size: .875rem;
+    $--smaller-font-size: .813rem;
+  }
+}
 </style>
