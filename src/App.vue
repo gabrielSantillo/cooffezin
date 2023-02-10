@@ -92,5 +92,30 @@ img {
 }
 
 /************ BUTTON *************/
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  background-color: $--second-color;
+  padding: 1rem 1.5rem;
+  border-radius: 4rem;
+  color: $--title-color;
+  font-weight: $--font-medium;
+  box-shadow: 0 8px 32px hsla(39, 62%, 65%, .25);
+  transition: box-shadow .3s;
+}
+
+.button i {
+  font-size: 1.5rem;
+  transition: transform .3s;
+}
+
+.button:hover {
+  box-shadow: 0 8px 48px hsla(39, 62%, 65%, .4);
+}
+
+.button:hover i {
+  transform: translateX(.25rem);
+}
 
 </style>
