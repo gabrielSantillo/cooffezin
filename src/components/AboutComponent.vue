@@ -26,4 +26,20 @@
 
 <style lang="scss" scoped>
 
+@import "@/scss/variables.scss";
+
+.about__container {
+    row-gap: 3rem;
+}
+
+.about__data {
+    text-align: center;
+}
+
+.about__img {
+    width: 320px;
+    border-radius: 1rem;
+    justify-self: center;
+}
+
 </style>
