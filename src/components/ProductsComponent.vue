@@ -3,7 +3,7 @@
         <div class="products__bg section">
             <div class="products__container container grid">
                 <div class="products__data">
-                    <a href="#" class="products__button">Scroll Down</a>
+                    <a href="#" class="products__button">Scroll Down <i class="ri-arrow-down-s-line"></i></a>
 
                     <p class="products__description">
                         We strive to form deep partnerships with farmers from all over the world to create perspective together and form helathy working relationships built on trust and respect.
@@ -42,4 +42,71 @@
 
 <style lang="scss" scoped>
 @import '@/scss/variables.scss';
+
+.products {
+    background-color: $--first-color-alt;
+}
+
+.products__bg {
+    background-color: $--first-color;
+    border-radius: $--border-section;
+}
+
+.products__container {
+    row-gap: 3.5rem;
+}
+
+.products__button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: $--first-color-alt;
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    color: $--white-color;
+    font-weight: $--font-medium;
+    box-shadow: 0 8px 24px hsla(12, 32%, 8%, .5);
+    margin-bottom: 2rem;
+    transition: box-shadow .3s, transform .3s;
+}
+
+.products__button i {
+    font-size: 1.5rem;
+}
+
+.products__button:hover {
+    box-shadow: 0 8px 32px hsla(12, 32%, 8%, .6);
+    transform: translateY(.35rem);
+}
+
+.products__data, .products__card {
+    text-align: center;
+    color: $--white-color;
+}
+
+.products__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 3.5rem 4.5rem;
+}
+
+.products__img {
+    width: 120px;
+    filter: drop-shadow(0 .5px 6px rgb(255, 255, 255));
+    margin-bottom: 1.5rem;
+    transition: transform .4s;
+}
+
+.products__img:hover {
+    transform: translateY(-.35rem);
+}
+
+.products__name, .products__price {
+    font-size: $--h2-font-size;
+    font-family: $--second-font;
+    font-weight: $--font-regular;
+    line-height: 120%;
+}
+
 </style>
