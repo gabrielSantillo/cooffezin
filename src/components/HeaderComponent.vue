@@ -11,22 +11,22 @@
       <div class="nav__menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link" ref="home"
+            <a @click="go_to('')" class="nav__link" ref="home"
               ><i class="ri-home-5-fill"></i> <span>Home</span></a
             >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link" ref="about"
+            <a @click="go_to('about')" class="nav__link" ref="about"
               ><i class="ri-award-fill"></i> <span>About</span></a
             >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link" ref="steps"
+            <a @click="go_to('steps')" class="nav__link" ref="steps"
               ><i class="ri-compass-3-fill"></i> <span>Steps</span></a
             >
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link" aria-readonly="testimonial"
+            <a @click="go_to('testimonial')" class="nav__link" aria-readonly="testimonial"
               ><i class="ri-message-3-fill"></i> <span>Testimonial</span></a
             >
           </li>
@@ -37,7 +37,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+    methods: {
+    go_to(ref) {
+      this.$router.push(`/${ref}`);
+    },}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -115,6 +120,7 @@ export default {};
     align-items: center;
     row-gap: .25rem;
     transition: color .3s;
+    cursor: pointer;
 }
 
 .nav__link i {
