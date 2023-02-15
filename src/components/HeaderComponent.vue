@@ -21,11 +21,6 @@
             >
           </li>
           <li class="nav__item">
-            <a @click="go_to('steps')" class="nav__link" ref="steps"
-              ><i class="ri-compass-3-fill"></i> <span>Steps</span></a
-            >
-          </li>
-          <li class="nav__item">
             <a @click="go_to('testimonial')" class="nav__link" aria-readonly="testimonial"
               ><i class="ri-message-3-fill"></i> <span>Testimonial</span></a
             >
@@ -101,7 +96,7 @@ export default {
                     $--first-color-alt 100%);
         border-radius: 56px 56px 0 0;
         box-shadow: 0 -2px 12px hsla(12, 32%, 12%, .3);
-        width: 100%;
+        width: 80%;
         padding: 1.25rem 4rem;
     }
 }
