@@ -131,6 +131,10 @@ export default {
     color: $--second-color;
 }
 
-
+@media screen and (max-width: 375px) {
+  .nav__menu {
+    padding-inline: 3rem;
+  }
+}
 
 </style>

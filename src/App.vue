@@ -120,4 +120,26 @@ img {
   transform: translateX(.25rem);
 }
 
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsl(12, 8%, 65%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(12, 8%, 45%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(12, 8%, 35%);
+}
+
+/************* MEDIA QUERIES *****************/
+/* For small devices */
+@media screen and (max-width: 375px) {
+  .container {
+    margin-inline: 1rem;
+  }
+}
+
+
 </style>

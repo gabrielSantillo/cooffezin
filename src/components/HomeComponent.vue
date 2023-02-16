@@ -87,4 +87,15 @@
     width: 320px;
     justify-self: center;
 }
+
+@media screen and (max-width: 375px) {
+    .home__title {
+    width: 220px;
+    text-align: center;
+  }
+
+  .home__title img {
+    bottom: 2.5rem;
+  }
+}
 </style>

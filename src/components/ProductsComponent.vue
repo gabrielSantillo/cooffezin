@@ -109,4 +109,10 @@
     line-height: 120%;
 }
 
+@media screen and (max-width: 375px) {
+    .products__content {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>

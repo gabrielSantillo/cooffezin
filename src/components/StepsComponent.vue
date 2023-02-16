@@ -163,4 +163,18 @@
     opacity: .25;
 }
 
+@media screen and (max-width: 375px) {
+    .steps__content {
+        row-gap: 3rem;
+    }
+
+    .steps__card {
+        width: initial;
+    }
+
+    .steps__border {
+        left: 0;
+        top: 5.5rem;
+    }
+}
 </style>
