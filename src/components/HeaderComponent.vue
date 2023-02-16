@@ -71,6 +71,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .nav__logo {
@@ -131,9 +132,43 @@ export default {
     color: $--second-color;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .nav__menu {
     padding-inline: 3rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .nav__menu {
+    width: 376px;
+  }
+}
+
+@media screen and (min-width: 1024px) { 
+  .nav {
+    height: calc($--header-height + 2rem);
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .nav__logo img {
+    width: 32px;
+  }
+
+  .nav__menu {
+    width: initial;
+  }
+
+  .nav__list {
+    column-gap: 4.5rem;
+  }
+
+  .nav__link {
+    font-size: $--normal-font-size;
+  }
+
+  .nav__link i {
+    display: none;
   }
 }
 

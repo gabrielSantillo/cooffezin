@@ -18,7 +18,7 @@ import HeaderComponent from './components/HeaderComponent.vue'
 <style lang="scss">
 @import '@/scss/variables.scss';
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   :root {
     $--biggest-font-size: 4.5rem;
     $--big-font-size: 3rem;
@@ -135,11 +135,16 @@ img {
 
 /************* MEDIA QUERIES *****************/
 /* For small devices */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .container {
     margin-inline: 1rem;
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .section {
+    padding-block: 7.5rem 5.5rem;
+  }
+}
 
 </style>

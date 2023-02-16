@@ -57,7 +57,7 @@
 
 .testimonial__container {
     row-gap: 3rem;
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 .testimonial__data {
@@ -78,6 +78,13 @@
     object-fit: cover;
     border-radius: 1rem;
     justify-self: center;
+}
+
+@media screen and (min-width: 576px) {
+    .testimonial__container {
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
 }
 
 </style>

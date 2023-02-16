@@ -88,14 +88,41 @@
     justify-self: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     .home__title {
     width: 220px;
     text-align: center;
-  }
+    }
 
-  .home__title img {
-    bottom: 2.5rem;
-  }
+    .home__title img {
+        bottom: 2.5rem;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+    .home__container {
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .home__container {
+        grid-template-columns: max-content 440px;
+        align-items: center;
+        width: 100%;
+        padding-top: 3rem;
+    }
+
+    .home__img {
+        order: -1;
+        width: 450px;
+    }
+
+    .home__description {
+        margin-bottom: 3rem;
+    }
+
 }
 </style>

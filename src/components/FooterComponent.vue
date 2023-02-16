@@ -189,4 +189,17 @@
     opacity: .5;
 }
 
+@media screen and (min-width: 576px) {
+    .footer__container {
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .footer__bg { 
+        border-radius: 104px 104px 0 0;
+    }
+}
+
 </style>

@@ -163,9 +163,11 @@
     opacity: .25;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     .steps__content {
         row-gap: 3rem;
+        grid-template-columns: 325px;
+        justify-content: center;
     }
 
     .steps__card {
@@ -175,6 +177,12 @@
     .steps__border {
         left: 0;
         top: 5.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .steps__bg {
+        border-radius: 104px 104px 0 0;
     }
 }
 </style>

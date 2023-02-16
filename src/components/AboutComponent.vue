@@ -42,4 +42,12 @@
     justify-self: center;
 }
 
+@media screen and (min-width: 576px) {
+    .about__container {
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
+
+}
+
 </style>
