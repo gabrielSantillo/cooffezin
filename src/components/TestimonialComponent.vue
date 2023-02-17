@@ -1,8 +1,8 @@
 <template>
     <div class="testimonial">
-        <div class="testimonial__bg section">
-            <div class="testimonial__container container grid">
-                <div class="testimonial__data">
+        <div class="testimonial__bg section" >
+            <div class="testimonial__container container grid" >
+                <div class="testimonial__data" v-scroll-reveal.reset="{ delay: 250, origin: 'right' }">
                     <h2 class="section__title testimonial__title">
                         Coffee is the best drink in the morning, it keeps you focused.
                     </h2>
@@ -12,11 +12,11 @@
                     </span>
                 </div>
 
-                <img src="@/img/testimonial-coffee.png" alt="testimonial image" class="testimonial__img">
+                <img src="@/img/testimonial-coffee.png" alt="testimonial image" class="testimonial__img" v-scroll-reveal.reset="{ delay: 350, origin: 'left' }">
             </div>
 
             <div class="testimonial__container container grid testimonial__container-move">
-                <div class="testimonial__data">
+                <div class="testimonial__data" v-scroll-reveal.reset="{ delay: 250, origin: 'right' }">
                     <h2 class="section__title testimonial__title">
                         Eating rice cakes is like chewing on a foam coffee cup, only less filling.
                     </h2>
@@ -26,11 +26,11 @@
                     </span>
                 </div>
 
-                <img src="@/img/testimonial-coffee-2.jpeg" alt="testimonial image" class="testimonial__img">
+                <img src="@/img/testimonial-coffee-2.jpeg" alt="testimonial image" class="testimonial__img" v-scroll-reveal.reset="{ delay: 350, origin: 'left' }">
             </div>
 
             <div class="testimonial__container container grid">
-                <div class="testimonial__data">
+                <div class="testimonial__data" v-scroll-reveal.reset="{ delay: 250, origin: 'right' }">
                     <h2 class="section__title testimonial__title">
                         I have measured out my life with coffee spoons.
                     </h2>
@@ -40,7 +40,7 @@
                     </span>
                 </div>
 
-                <img src="@/img/testimonial-coffee-3.jpeg" alt="testimonial image" class="testimonial__img">
+                <img src="@/img/testimonial-coffee-3.jpeg" alt="testimonial image" class="testimonial__img" v-scroll-reveal.reset="{ delay: 350, origin: 'left' }">
             </div>
         </div>
     </div>

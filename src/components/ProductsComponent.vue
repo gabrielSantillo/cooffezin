@@ -2,7 +2,7 @@
     <div class="products">
         <div class="products__bg section">
             <div class="products__container container grid">
-                <div class="products__data">
+                <div class="products__data" v-scroll-reveal.reset="{ delay: 350, origin: 'left' }">
                     <a href="#" class="products__button">Scroll Down <i class="ri-arrow-down-s-line"></i></a>
 
                     <p class="products__description">
@@ -11,19 +11,19 @@
                 </div>
 
                 <div class="products__content">
-                    <article class="products__card">
+                    <article class="products__card" v-scroll-reveal.reset="{ delay: 450, origin: 'top' }">
                         <img src="@/img/product-coffee-1.png" alt="products image" class="products__img">
                         <h3 class="products__name">Classic Coffee</h3>
                         <span class="products__price">$17.90</span>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card" v-scroll-reveal.reset="{ delay: 550, origin: 'top' }">
                         <img src="@/img/product-coffee-2.png" alt="products image" class="products__img">
                         <h3 class="products__name">Black Coffee</h3>
                         <span class="products__price">$24.90</span>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card" v-scroll-reveal.reset="{ delay: 850, origin: 'top' }">
                         <img src="@/img/product-coffee-3.png" alt="products image" class="products__img">
                         <h3 class="products__name">Strong Coffee</h3>
                         <span class="products__price">$32.90</span>

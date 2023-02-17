@@ -2,7 +2,7 @@
     <div class="about">
         <div class="about__bg section">
             <div class="about__container container grid">
-                <div class="about__data">
+                <div class="about__data" v-scroll-reveal.reset="{ delay: 250, origin: 'right' }">
                     <h2 class="section__title">
                         Our History
                     </h2>
@@ -12,7 +12,7 @@
                     </p>
                 </div>
 
-                <img src="@/img/about-coffee.png" alt="about image" class="about__img">
+                <img src="@/img/about-coffee.png" alt="about image" class="about__img" v-scroll-reveal.reset="{ delay: 250, origin: 'left' }">
             </div>
         </div>
     </div>

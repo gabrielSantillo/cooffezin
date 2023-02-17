@@ -1,7 +1,7 @@
 <template>
     <div class="home section">
         <div class="home__container container grid">
-            <div class="home__data">
+            <div class="home__data" v-scroll-reveal.reset="{ delay: 250, origin: 'top' }">
                 <h3 class="home__subtitle">
                     EXCEPTIONAL QUALITY
                 </h3>
@@ -9,7 +9,7 @@
                 <h1 class="home__title">
                     It's time for a <br> good coffee
 
-                    <img src="@/img/home-coffee-title.png" alt="home image">
+                    <img src="@/img/home-coffee-title.png" alt="home image" >
                 </h1>
 
                 <p class="home__description">
@@ -21,7 +21,7 @@
                 </a>
             </div>
 
-            <img src="@/img/home-coffee.png" alt="home image" class="home__img">
+            <img src="@/img/home-coffee.png" alt="home image" class="home__img" v-scroll-reveal.reset="{ delay: 250 }">
         </div>
     </div>
 </template>

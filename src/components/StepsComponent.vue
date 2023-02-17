@@ -1,12 +1,12 @@
 <template>
     <div class="steps">
-        <div class="steps__bg section">
-            <h2 class="section__title section__title-big">
+        <div class="steps__bg section" >
+            <h2 class="section__title section__title-big" >
                 Steps of manufacturing our products
             </h2>
 
             <div class="steps__container container grid">
-                <img src="@/img/coffee-beans-bg.png" alt="steps image" class="steps__bg-img">
+                <img src="@/img/coffee-beans-bg.png" alt="steps image" class="steps__bg-img" >
 
                 <div class="steps__content">
                     <img src="@/img/steps-curve-line.svg" alt="steps image" class="steps__border">
