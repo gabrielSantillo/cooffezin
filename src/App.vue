@@ -147,4 +147,10 @@ img {
   }
 }
 
+@media screen and (min-width: 1152px) {
+  .container {
+    margin-inline: auto;
+  }
+}
+
 </style>

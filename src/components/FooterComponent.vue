@@ -200,6 +200,52 @@
     .footer__bg { 
         border-radius: 104px 104px 0 0;
     }
+
+    .footer__container {
+        grid-template-columns: initial;
+        justify-content: initial;
+        row-gap: 6rem;
+        padding-block: 6rem 3rem;
+    }
+
+    .footer__data {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-between;
+        text-align: initial;
+    }
+
+    .footer__logo {
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer__logo img {
+        width: 32px;
+    }
+
+    .footer__title {
+        font-size: $--h1-font-size;
+    }
+
+    .footer__form {
+        width: 360px;
+        row-gap: 1.5rem;
+    }
+
+    .footer__content {
+        row-gap: 4rem;
+    }
+
+    .footer__social {
+        column-gap: 3rem;
+    }
+
+    .footer__social-link {
+        font-size: 1.5rem;
+    }
+
+    .footer__bg-img {
+        object-position: top;
+    }
 }
 
 </style>

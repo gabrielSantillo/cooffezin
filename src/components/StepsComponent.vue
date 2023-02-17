@@ -1,7 +1,7 @@
 <template>
     <div class="steps">
         <div class="steps__bg section">
-            <h2 class="section__title">
+            <h2 class="section__title section__title-big">
                 Steps of manufacturing our products
             </h2>
 
@@ -183,6 +183,43 @@
 @media screen and (min-width: 1024px) { 
     .steps__bg {
         border-radius: 104px 104px 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .steps__card {
+        width: 272px;
+    }
+
+    .steps__circle {
+        width: 260px;
+        height: 260px;
+    }
+
+    .steps__img {
+        width: 210px;
+    }
+
+    .steps__subcircle {
+        width: 85px;
+        height: 85px;
+        top: -1.25rem;
+        outline: 15px solid $--first-color;
+    }
+
+    .steps__border {
+        display: none;
+    }
+
+    .steps__img-bg {
+        top: 0;
+        height: 100%;
+        object-position: initial;
+    }
+
+    .section__title-big {
+        font-size: 5rem;
     }
 }
 </style>

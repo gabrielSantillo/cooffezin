@@ -47,7 +47,32 @@
         grid-template-columns: 400px;
         justify-content: center;
     }
+}
 
+@media screen and (min-width: 1024px) {
+    .about__container {
+        grid-template-columns: max-content 465px;
+        align-items: center;
+    }
+
+    .about__img {
+        order: -1;
+        width: 450px;
+    }
+
+    .about__data, .about__data .section__title {
+    text-align: initial;
+    }
+}
+
+@media screen and (min-width: 1248px) { 
+    .about__container {
+        column-gap: 6.5rem;
+    }
+
+    .about__img {
+        width: 550px;
+    }
 }
 
 </style>

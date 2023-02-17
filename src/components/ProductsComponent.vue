@@ -126,7 +126,30 @@
 @media screen and (min-width: 1024px) { 
     .products__bg {
     border-radius: 104px 104px 0 0;
+    }
+
+    .products__container {
+        grid-template-columns: 418px 535px;
+        align-items: center;
+    }
+
+    .products__data {
+        text-align: initial;
+    }
+
+    .products__content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .products__name, .products__price {
+        font-size: $--big-font-size;
+    }
 }
+
+@media screen and (min-width: 1248px) { 
+    .products__container {
+        column-gap: 9rem;
+    }
 }
 
 </style>

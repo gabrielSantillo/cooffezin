@@ -15,7 +15,7 @@
                 <img src="@/img/testimonial-coffee.png" alt="testimonial image" class="testimonial__img">
             </div>
 
-            <div class="testimonial__container container grid">
+            <div class="testimonial__container container grid testimonial__container-move">
                 <div class="testimonial__data">
                     <h2 class="section__title testimonial__title">
                         Eating rice cakes is like chewing on a foam coffee cup, only less filling.
@@ -84,6 +84,37 @@
     .testimonial__container {
         grid-template-columns: 400px;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonial__container {
+        grid-template-columns: 510px max-content;
+        align-items: center;
+    }
+
+    .testimonial__img {
+        width: 450px;
+        height: 320px;
+    }
+
+    .testimonial__data, .testimonial__data .section__title{
+        text-align: initial;
+    }
+
+    .testimonial__data .section__title {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1248px) { 
+    .testimonial__container {
+        column-gap: 2rem;
+    }
+
+    .testimonial__img {
+        width: 550px;
+        height: 380px;
     }
 }
 

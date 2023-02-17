@@ -123,6 +123,15 @@
     .home__description {
         margin-bottom: 3rem;
     }
+}
 
+@media screen and (min-width: 1248px) { 
+    .home__container {
+        column-gap: 4.5rem;
+    }
+
+    .home__img {
+        width: 550px;
+    }
 }
 </style>
