@@ -8,7 +8,7 @@
             <div class="steps__container container grid">
                 <img src="@/img/coffee-beans-bg.png" alt="steps image" class="steps__bg-img" >
 
-                <div class="steps__content">
+                <div class="steps__content" v-scroll-reveal.reset="{ delay: 250, origin: 'top' }">
                     <img src="@/img/steps-curve-line.svg" alt="steps image" class="steps__border">
 
                     <div class="steps__card">
