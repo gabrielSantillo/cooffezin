@@ -61,7 +61,7 @@ import axios from "axios"
 subscribe() {
       axios
         .request({
-          url: `http://127.0.0.1:5000/api/client`,
+          url: `${process.env.VUE_APP_BASE_DOMAIN}/api/client`,
           method: `POST`,
           data: {
             email: this.$refs[`email`][`value`],
