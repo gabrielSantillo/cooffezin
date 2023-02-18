@@ -72,7 +72,7 @@ subscribe() {
           response;
         })
         .catch((error) => {
-            alert("Sprry, an error has occurred. Please, try again.");
+            alert("Sorry, an error has occurred. Please, try again.");
           error;
         });
     },
