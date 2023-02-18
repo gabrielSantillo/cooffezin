@@ -19,7 +19,7 @@
                     <form action="" class="footer__form grid">
                         <input type="email" placeholder="Enter e-mail address" class="footer__input">
 
-                        <button class="button footer__button" type="submit">
+                        <button class="button footer__button" type="submit" @click="subscribe">
                             Subscribe
                         </button>
 
@@ -53,8 +53,13 @@
 </template>
 
 <script>
+import axios from "axios"
     export default {
-        
+        methods: {
+            subscribe() {
+                
+            }
+        },
     }
 </script>
 

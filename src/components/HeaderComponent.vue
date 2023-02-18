@@ -151,6 +151,10 @@ export default {
     max-width: 100%;
   }
 
+  .nav__logo {
+    padding-left: 1.5rem;
+  }
+
   .nav__logo img {
     width: 32px;
   }
