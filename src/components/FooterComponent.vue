@@ -17,7 +17,7 @@
                     </div>
 
                     <form action="" class="footer__form grid">
-                        <input type="email" placeholder="Enter e-mail address" class="footer__input">
+                        <input type="email" placeholder="Enter e-mail address" class="footer__input" ref="email">
 
                         <button class="button footer__button" type="submit" @click="subscribe">
                             Subscribe
@@ -28,6 +28,8 @@
                             <a href="#" class="footer__privacy">Privacy Policy</a>
                         </p>
                     </form>
+
+                    
                 </div>
 
                 <div class="footer__content grid">
@@ -56,9 +58,24 @@
 import axios from "axios"
     export default {
         methods: {
-            subscribe() {
-                axios
-            }
+subscribe() {
+      axios
+        .request({
+          url: `http://127.0.0.1:5000/api/client`,
+          method: `POST`,
+          data: {
+            email: this.$refs[`email`][`value`],
+          },
+        })
+        .then((response) => {
+          alert("You have successfully subscribed!");
+          response;
+        })
+        .catch((error) => {
+            alert("Sprry, an error has occurred. Please, try again.");
+          error;
+        });
+    },
         },
     }
 </script>
